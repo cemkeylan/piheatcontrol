@@ -79,6 +79,8 @@ def main():
             sleep(300)
     except KeyboardInterrupt:
         print('Keyboard interrupt, exiting')
+        GPIO.output(8, GPIO.LOW)
+        GPIO.output(10, GPIO.LOW)
         exit()
 
 
