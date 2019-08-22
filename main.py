@@ -19,7 +19,7 @@
 ##    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Import statements
-import RPi.GPIO as gpio
+import RPi.GPIO as GPIO
 import os
 try:
     from customs import credentials, heat
