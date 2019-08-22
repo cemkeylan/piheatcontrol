@@ -49,7 +49,7 @@ def checktemp(temp):      # Checks if the temperature is bigger
         GPIO.output(8, GPIO.HIGH)
         notifymail.send(
                 '[%s] Temperature Warning'%gethostname(),
-                'Raspberry Pi has recorded a rise in the room temperature, you might want to check it out.')  
+                'Raspberry Pi has recorded a rise in the room temperature\nRoom Temp: %d'%temp)  
         # You have to setup notifymail beforehand
     else:
         GPIO.output(8, GPIO.LOW)
