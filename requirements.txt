@@ -1,3 +1,4 @@
 psycopg2-binary
 Adafruit-DHT
 notifymail
+RPi.GPIO

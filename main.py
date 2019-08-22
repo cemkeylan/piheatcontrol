@@ -21,7 +21,6 @@
 # Import statements
 import RPi.GPIO as gpio
 import os
-import notifymail
 try:
     from customs import credentials, heat
 except ModuleNotFoundError:
@@ -31,6 +30,7 @@ except ModuleNotFoundError:
     except:
         print('There was an error importing credentials.')
         exit()
+import notifymail
 import Adafruit_DHT as dht
 from time import sleep
 import psycopg2 as pg
