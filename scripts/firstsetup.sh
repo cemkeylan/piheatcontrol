@@ -1,7 +1,8 @@
 #!/bin/sh
 
 BASEDIR="$(pwd)"
-sudo apt install dialog libpq5
+sudo apt update
+sudo apt install dialog libpq5 -y
 SERVERNAME="$(dialog --inputbox 'Enter postgres server address e.g pg.domain.ld' 10 60 3>&1 1>&2 2>&3)"
 DBNAME="$(dialog --inputbox 'Enter database name e.g. postgres' 10 60 3>&1 1>&2 2>&3)"
 DBPORT="$(dialog --inputbox 'Enter port number for postgres server, leave blank if it is 5432 (default)' 10 60 3>&1 1>&2 2>&3)"
