@@ -46,7 +46,7 @@ def gpiosetup():
 
 def checktemp(temp):      # Checks if the temperature is bigger 
     if temp == None:
-        notifymail.send('[%s] Hardware Warning'%gethostname(), 'Hardware is sending temperature as "None". Please make a hardware check.'
+        notifymail.send('[%s] Hardware Warning'%gethostname(), 'Hardware is sending temperature as "None". Please make a hardware check.')
     if temp > heat.max:   # than the allowed temperature
         GPIO.output(8, GPIO.HIGH)
         notifymail.send(
