@@ -72,6 +72,7 @@ def dbcommit(hum, temp):
 
 
 def main():
+    print('Starting Program')
     gpiosetup()
     try:
         while 1:
