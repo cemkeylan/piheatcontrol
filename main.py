@@ -85,6 +85,11 @@ def main():
         GPIO.output(8, GPIO.LOW)
         GPIO.output(10, GPIO.LOW)
         exit()
+    except:
+        notifymail.send('[%s] Programming Error'%gethostname(), 'There was an unknown error')
+        GPIO.output(8, GPIO.LOW)
+        GPIO.output(10, GPIO.LOW)
+        exit()
 
 
 if __name__ == '__main__':
